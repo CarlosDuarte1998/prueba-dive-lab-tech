@@ -1,3 +1,3 @@
-# prueba-dive-lab-tech
+# instalación del proyecto
 
 Primer paso:

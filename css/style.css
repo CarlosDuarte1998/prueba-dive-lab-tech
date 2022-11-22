@@ -1,11 +1,13 @@
 .body{
-    background-color: #1f1f1f;
+    background-color: #2b2b2bea;
 
 }
+
 
 .banner-image {
     background-image: url('../image/fondo.jpg');
     background-size: cover;
+    background-repeat: no-repeat
   }
 
   @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
@@ -33,13 +35,15 @@
   margin-right: auto;
   margin-bottom: 40px;
   margin-top: 20px;
+  padding: 1em;
 }
 
 .pokemon-block,
 .pokemon-block-back {
   border-radius: 10px;
   padding: 10px;
-  background-color: rgb(167, 167, 167);
+  background: rgb(238,174,202);
+  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,0.4989976828) 100%);
   box-shadow: 0 3px 15px rgba(100, 100, 100, 0.5);
 }
 
@@ -99,4 +103,13 @@
   display: grid;
   grid-template-columns: 1fr 2fr;
   text-align: left;
+  padding: 0.5em;
 }
+
+.text-gradient {
+  background: linear-gradient(to right, #6366f1, #8B5CF6, #D946EF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(0,0,0,0);
+}
+
+

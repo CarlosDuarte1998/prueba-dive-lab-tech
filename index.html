@@ -51,12 +51,44 @@
       </nav>
        <!-- Banner con imagen -->
        <div
-       class="banner-image w-100 vh-100 d-flex justify-content-center align-items-center"
+       class="banner-image w-100 vh-100 d-flex justify-content-center align-items-center seccion"
      >
-       <div class="content text-center">
+       <!-- <div class="content text-center">
          <h1 class="text-light">Bienvenido</h1>
-       </div>
-     </div>
+       </div> -->
+       <div class="container position-relative zindex-5 py-5">
+        <div class="row justify-content-md-start justify-content-center">
+          <div class="col-md-6 col-sm-8 order-md-1 order-2 d-flex flex-column justify-content-between mt-4 pt-2 text-md-start text-center">
+            <div class="mb-md-5 pb-xl-5 mb-4">
+
+              <!-- Video popup btn -->
+              <div class="d-inline-flex align-items-center position-relative mb-3">
+                <a href="https://www.youtube.com/watch?v=zPo5ZaH6sW8" class="btn btn-video btn-icon btn-lg flex-shrink-0 me-3 stretched-link" data-bs-toggle="video" data-lg-id="573db3da-6f32-4c1e-87c5-cff98d815986">
+                  <i class="bx bx-play"></i>
+                </a>
+              </div>
+
+              <!-- Text -->
+              <h1 class="display-2 mb-md-5 mb-3 pb-3 text-light">
+                We <span class="text-gradient">Transform</span> Your Ideas into Reality
+              </h1>
+              <div class="d-md-flex align-items-md-start">
+                <a href="" class="btn btn-lg btn-primary flex-shrink-0 me-md-4 mb-md-0 mb-sm-4 mb-3">Conoce mas</a>
+                <p class="d-lg-block d-none mb-0 ps-md-3 text-light">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod aliquid illo ea officia.</p>
+              </div>
+            </div>
+
+            <!-- Scroll down btn -->
+        
+          </div>
+
+          <!-- Animated gfx -->
+          <div class="col-sm-6 col-sm-6 col-9 order-md-2 order-1">
+      <img src="" alt="">
+          </div>
+        </div>
+      </div>
+      </div>
 
     
         <!-- START THE FEATURETTES -->
@@ -66,8 +98,7 @@
     <div class="px-lg-5">
       <div class="row align-items-center py-3 ">
         <div class="col-xl-6 col-lg-5 col-md-6">
-          <h2 class="h1 text-light">Un gusto conocerte.</h2>
-          <h3 class="h4 text-primary">Soy desarrollador web</h3>
+          <h2 class="h1 text-light seccion">Un gusto conocerte.</h2>
           <p class="mb-4 mb-lg-5 text-light">Desde que comencé mi viaje como desarrollador hace más de 2 años, he realizado
             trabajos para la alcaldía y la fundación gloria de kriete donde he tuve la oportunidad de desarrollar mis
             habilidades. He colaborado con personas talentosas para crear productos digitales para uso comercial o de
@@ -83,25 +114,83 @@
   </div>
     
   <div class="container">
-    <h5 class="display-5 fw-bold lh-1 mb-3 text-light text-center" id="carga">PokéApi</h5>
+    <h5 class="display-5 fw-bold lh-1 mb-3 text-light text-center seccion" id="carga">PokéApi</h5>
+    <div class="p-5">
+      <h5 class="text-light">Ese es el propósito de Pokéapi, una API RESTful creada específicamente para informar a todos los jugadores de Pokémon. Es, de lejos, la mayor base de datos gratuita sobre Pokémon, y puedes utilizarla tanto y como quieras.</h4>
+    </div>
   </div>
-  <div class="pokemon-container">
+  <div class="pokemon-container container">
 
   </div>
-  <nav class="pagination" aria-label="...">
-      <ul class="pagination">
-        <li class="page-item" id="previous">
-          <a class="page-link" href="#carga" tabindex="-1">Anterior</a>
+  <nav class="pagination " aria-label="...">
+      <ul class="pagination bg">
+        <li class="page-item bg" id="anterior">
+          <a class="page-link bg-secondary text-bg-danger" href="#carga" tabindex="-1">Anterior</a>
         </li>
-        <li class="page-item" id="next">
-          <a class="page-link" href="#carga">Siguiente</a>
+        <li class="page-item" id="siguiente">
+          <a class="page-link bg-secondary text-bg-danger" href="#carga">Siguiente</a>
         </li>
       </ul>
     </nav>
   <div id="spinner" class="spinner-border text-dark" role="status">
       <span class="visually-hidden">Loading...</span>
     </div>
- 
+
+
+<!-- Contactos -->
+<div class="container">
+  <div class="row pt-md-2 pt-lg-5 pb-2 pb-md-4">
+    <div class="col-xxl-4 col-xl-5 col-lg-6 pt-3 mt-3">
+      <h1 class="h3 mb-2 text-light">¿Te gusta mi trabajo?</h1>
+      <h3 class="display-1 text-gradient pb-sm-2 pb-md-3 mb-3">¡Contactame!</h3>
+      
+      <div class="container">
+        
+      </div>
+    </div>
+    <div class="col-lg-6 offset-xl-1 offset-xxl-2 pt-3 pt-md-4 pt-lg-3 mt-3">
+      <form class="needs-validation" novalidate="">
+        <div class="row g-4">
+          <div class="col-sm-6">
+            <label for="fn" class="form-label text-light h4 fs-base">Nombre completo</label>
+            <input type="text" class="form-control form-control-lg" id="fn" required="">
+            <div class="invalid-feedback">Please enter your full name!</div>
+          </div>
+          <div class="col-sm-6">
+            <label for="email" class="form-label text-light h4 fs-base">Correo</label>
+            <input type="email" class="form-control form-control-lg" id="email" required="">
+            <div class="invalid-feedback">Please provide a valid email address!</div>
+          </div>
+          <div class="col-12 pb-2">
+            <label for="message" class="form-label text-light h4 fs-base">Comentario</label>
+            <textarea class="form-control form-control-lg" id="message" rows="3" required=""></textarea>
+            <div class="invalid-feedback">Please provide a valid email address!</div>
+          </div>
+          <div class="col-12">
+            <button type="submit" class="btn btn-lg btn-primary w-100 w-sm-auto">Enviar</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+    
+    <!-- Footer -->
+    <footer class="d-flex justify-content-between align-items-center p-4 my-4 border-top">
+      <p class="col-md-4 mb-0 text-muted">© 2022 Company, Inc</p>
+  
+      <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+        <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+      </a>
+  
+      <ul class="nav col-md-4 justify-content-end">
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Inicio</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">¿Que hago?</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">PokéApi</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Tecnologias</a></li>
+
+      </ul>
+    </footer>
     </body>
 <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>

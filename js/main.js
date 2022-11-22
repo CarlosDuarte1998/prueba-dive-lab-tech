@@ -1,8 +1,8 @@
 let nav = document.querySelector('nav');
 const pokemonContainer = document.querySelector(".pokemon-container");
 const spinner = document.querySelector("#spinner");
-const previous = document.querySelector("#previous");
-const next = document.querySelector("#next");
+const anterior = document.querySelector("#anterior");
+const siguiente = document.querySelector("#siguiente");
 let limit = 8;
 let offset = 1;
 
@@ -14,9 +14,11 @@ window.addEventListener('scroll', function () {
     nav.classList.remove('bg-dark', 'shadow');
   }
 });
+//Evento para manu animado
 
-//API RESTful
-previous.addEventListener("click", () => {
+
+//API RESTful PokeApi
+anterior.addEventListener("click", () => {
   if (offset != 1) {
     offset -= 9;
     removeChildNodes(pokemonContainer);
@@ -24,7 +26,7 @@ previous.addEventListener("click", () => {
   }
 });
 
-next.addEventListener("click", () => {
+siguiente.addEventListener("click", () => {
   offset += 9;
   removeChildNodes(pokemonContainer);
   fetchPokemons(offset, limit);
@@ -38,6 +40,8 @@ function fetchPokemon(id) {
       spinner.style.display = "none";
     });
 }
+
+
 
 function fetchPokemons(offset, limit) {
   spinner.style.display = "block";
@@ -130,3 +134,5 @@ function removeChildNodes(parent) {
 }
 
 fetchPokemons(offset, limit);
+
+
