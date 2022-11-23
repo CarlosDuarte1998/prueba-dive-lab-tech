@@ -94,6 +94,7 @@ function createPokemon(pokemon) {
 function progressBars(stats) {
   const statsContainer = document.createElement("div");
   statsContainer.classList.add("stats-container");
+  
 
   for (let i = 0; i < 3; i++) {
     const stat = stats[i];
